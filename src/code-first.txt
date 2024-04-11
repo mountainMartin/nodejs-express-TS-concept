@@ -1,0 +1,10 @@
+DATABASE testdb
+
+CREATE TABLE `testdb`.`template` (
+    `id` CHAR(36) NOT NULL , 
+    `digits` INT NOT NULL , 
+    `text` VARCHAR(20) NULL DEFAULT NULL , 
+    `is_active` TINYINT NOT NULL DEFAULT '1' , 
+    `date` DATETIME NOT NULL , 
+    PRIMARY KEY (`id`)) 
+    ENGINE = InnoDB;
